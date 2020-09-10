@@ -7,6 +7,8 @@ List of countries with states on country code param, ready to serve as static co
 
 This can be used right away with get request to [https://countries.bloggernepal.com/countries/](https://countries.bloggernepal.com/countries/). It can be used for testing or smaller project, but as this is served from github it can get limited requests, so just clone on your server and serve these files as static files.
 
+Git repo: [https://github.com/InfoDevkota/Country-with-states-and-dial-code](https://github.com/InfoDevkota/Country-with-states-and-dial-code)
+
 Let's assume it is cloned and served through `/static`.
 
 `/static/countries/` or to `/static/countries.json` will return all the countries with country code, name, capital, region [32.5 kb]

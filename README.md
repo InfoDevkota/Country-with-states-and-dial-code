@@ -13,7 +13,7 @@ Let's assume it is cloned and served through `/static`.
 
 `/static/countries/` or to `/static/countries.json` will return all the countries with country code, name, capital, region [32.5 kb]
 
-```javascript
+```
 [{
     "code": "NP",
     "code3": "NPL",
@@ -25,15 +25,15 @@ Let's assume it is cloned and served through `/static`.
 }, ..., {}]
 ```
 
- `/static/countries-mini/` or `/static/countries-mini.json`  will return mini version [5.5kb]
-```javascript
+ `/static/countries-mini/` or `/static/countries-mini.json`  will return mini version [8.5kb]
+```
 [{
     "code": "NP",
     "name": "Nepal"
 }, ..., {}]
 ```
 
-Once we got the `code` or `code2`, we can request for it's states and other details with `/static/states/NP/` or `/static/states/NP.json`, NP being the country code.
+Once we got the `code` for country, we can request for it's states and other details with `/static/states/NP/` or `/static/states/NP.json`, NP being the country code.
 
 ```
 {

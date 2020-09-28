@@ -11,7 +11,7 @@ Git repo: [https://github.com/InfoDevkota/Country-with-states-and-dial-code](htt
 
 Let's assume it is cloned and served through `/static`.
 
-`/static/countries/` or to `/static/countries.json` will return all the countries with country code, name, capital, region [32.5 kb]
+`/static/countries/` or to `/static/countries.json` will return all the countries with country code, name, capital, region [32.5 kb] [[countries](https://countries.bloggernepal.com/countries/)]
 
 ```
 [{
@@ -25,7 +25,7 @@ Let's assume it is cloned and served through `/static`.
 }, ..., {}]
 ```
 
- `/static/countries-mini/` or `/static/countries-mini.json`  will return mini version [8.5kb]
+ `/static/countries-mini/` or `/static/countries-mini.json`  will return mini version [8.5kb] [[countries-mini](https://countries.bloggernepal.com/countries-mini/)]
 ```
 [{
     "code": "NP",
@@ -33,7 +33,16 @@ Let's assume it is cloned and served through `/static`.
 }, ..., {}]
 ```
 
-Once we got the `code` for country, we can request for it's states and other details with `/static/states/NP/` or `/static/states/NP.json`, NP being the country code.
+ `/static/countries-dial/` or `/static/countries-dial.json`  will return mini version with dial code [12.5kb] [[countries-dial](https://countries.bloggernepal.com/countries-dial/)]
+```
+[{
+    "code": "NP",
+    "name": "Nepal",
+    "dialCode": "+977"
+}, ..., {}]
+```
+
+Once we got the `code` for country, we can request for it's states and other details with `/static/states/NP/` or `/static/states/NP.json`, NP being the country code. [[states/NP](https://countries.bloggernepal.com/states/NP/)]
 
 ```
 {
